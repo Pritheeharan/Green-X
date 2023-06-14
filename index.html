@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banc Solaire Intelligent</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./image/logo_greenX.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./image/logo_greenX.png" alt="Banc solaire intelligent">
+            <div id="headText">
+                <h2>GreenX</h2>
+            </div>
+            <input id="searchbar" onkeyup="search" type="text" name="search" placeholder="Search"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#caracteristiques">Caractéristiques</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#Energie">Energie</a></li>
+                <li><a href="#Map">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 
+        j'ai divisé ton code pour que ce soit plus propre, en gros dans main c'es le contenue principale de ta page
+        puis j'ai utilisé la balise section pour mettre trois section: caracteristiques, Clients et Energie.
+        les id que t'avais mis dans les h2 ils servent à rien du coup je l'ai mis sur la balise section pour les identifier.
+    -->
+    <main class="container">
+        <!-- section intro -->
+        <section id="intro">
+            <h2>Introduction</h2>
+            <div id="intro_box">
+                <div id="intro_txt">
+                    <h1> Banc Solaire Intelligent</h1>
+                    <p>Bienvenue sur notre site dédié au banc solaire intelligent. Découvrez un nouveau mode de vie écologique avec notre technologie innovante.</p>
+                </div>
+                <div id="intro_img">
+                    <figure>
+                        <img src="./image/greenx_pres.png" alt="presentation greenx_pres">
+                        <figcaption> GreenX: banc solaire intelligent</figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- section caracteristiques -->
+        <section id="caracteristiques">
+            <h2>Caractéristiques</h2>
+            <div id="grid_caract">
+                <div class="grid box_caracteristique">
+                    <div class="carac_box">
+                        <h3>Chargement solaire</h3>
+                        <p>Le banc solaire intelligent utilise l'énergie solaire pour charger vos appareils électroniques.</p>
+                    </div>
+                    <div class="carac_box">
+                        <h3>Confortable</h3>
+                        <p>Avec un design ergonomique, notre banc solaire intelligent offre un confort exceptionnel.</p>
+                    </div>
+                    <div class="carac_box">
+                        <h3>Éco-responsable</h3>
+                        <p>En utilisant l'énergie solaire, notre banc est respectueux de l'environnement et contribue à la transition énergétique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section clients -->
+        <section id="clients">
+            <h2>Clients</h2>
+            <p>Voici quelques exemples de nos clients satisfaits qui ont adopté le banc solaire intelligent.</p>
+            <div class="grid">
+                <div class="box">
+                    <!-- mettre l'image dans deux boxe differentt permettra de mieux organiser t'as page et le code sera plus propre ;) -->
+                    <div class="box_img">
+                        <img src="./image/client_mair.jpg" alt="client 1">
+                    </div>
+
+                    <!-- dans le boxe du texte c'est mieux de mettre un h3 qu'un p -->
+                    <div class="box_txt">
+                        <h3>Mairie</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- mettre l'image dans deux boxe differentt permettra de mieux organiser t'as page et le code sera plus propre ;) -->
+                    <div class="box_img">
+                        <img src="./image/client_univ.jpg" alt="client 2">
+                    </div>
+
+                    <!-- dans le boxe du texte c'est mieux de mettre un h3 qu'un p -->
+                    <div class="box_txt">
+                        <h3>Université</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- mettre l'image dans deux boxe differentt permettra de mieux organiser t'as page et le code sera plus propre ;) -->
+                    <div class="box_img">
+                        <img src="./image/client_park.jpg" alt="client 3">
+                    </div>
+
+                    <!-- dans le boxe du texte c'est mieux de mettre un h3 qu'un p -->
+                    <div class="box_txt">
+                        <h3>Parc</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section energie -->
+        <section  id="Energie">
+            <h2>Energie</h2>
+            <table>
+                <tr>
+                    <th>ENERGIE</th>
+                    <th>DIMENSIONS </th>
+                    <th>RESEAUX</th>
+                </tr>
+                <tr>
+                    <td>Solaire</td>
+                    <td>2500 mm </td>
+                    <td> Zigbee </td>
+                </tr>
+                <tr>
+                    <td>Mécanique</td>
+                    <td>700 mm</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1800 mm</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- section equipe -->
+        <section id="Equipe">
+            <h2>Equipe</h2>
+            
+            <div class="grid"> 
+                <div class="box">
+                    <!-- mettre l'image dans deux boxe differentt permettra de mieux organiser t'as page et le code sera plus propre ;) -->
+                    <div class="box_img">
+                        <img src="./image/Capture d’écran équipe.jpg" alt="client 3">
+                    </div>
+
+                    <!-- dans le boxe du texte c'est mieux de mettre un h3 qu'un p -->
+                    <div class="box_txt">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section map -->
+        <section id="MAP">
+            <h2>Map</h2>
+            
+            <input id="searchbar" onkeyup="Search" type="text" name="Search" placeholder="Lieu">
+            <div class="grid">
+                <div class="carac_box"> 
+                    <p>Departement SEINE-ET-MARNE</p>
+                </div>
+                <div class="carac_box">
+                    p>Departement SEINE-SAINT-DENIS</p>
+                </div>
+                <div class="carac_box">
+                    p>Departement VAL-D'OISE</p>
+                </div>
+                <div class="carac_box">
+                    p>Departement VAL-DE-MARNE</p>
+                </div>
+                <div class="carac_box">
+                    p>Departement YVELINES</p>
+                </div>
+                <div class="carac_box">
+                    p>Departement ESSONNE</p>
+                </div>
+
+                <!-- BOX de l'image -->
+                <div class="box">
+                    <!-- mettre l'image dans deux boxe differentt permettra de mieux organiser t'as page et le code sera plus propre ;) -->
+                    <div class="box_img">
+                        <img src="./image/Capture d’écran Ile de France .jpg" alt="client 3">
+                    </div>
+
+                    <!-- dans le boxe du texte c'est mieux de mettre un h3 qu'un p -->
+                    <div class="box_txt">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section IMC -->
+    
+        <section id="calcul-imc">
+            <h2>Calcul de l'IMC</h2>
+            <div id="imc">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Taille (cm)</th>
+                            <th>Poids (kg)</th>
+                            <th>IMC</th>
+                        </tr>
+                        <tr>
+                            <td id="taille_val" name="taille"></td>
+                            <td id="poids_val" name="poids"></td>
+                            <td><span id="imc_val"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="button" value="Appuyer ici" id="ctaImc">
+            </div>
+        </section>
+    </main>
+
+    <!-- dans le footer je met vos noms et votre filière -->
+    <footer>
+        <p>
+            &copy; 
+            LP Mécatronique, Robotique - IMNEOV Promotion 2022 - 2023
+        </p>
+        <ul>
+            <li>Oumar Sow</li>
+            <li>Karunakaran Pritheeharan</li>
+            <li>Moreau Alyssa</li>
+            <li>Barros Camille</li>
+            <li>Saïd Abdou Kephren</li>
+            <li>Van Eeckhout Hugo </li>
+        </ul>
+    </footer>
+</body>
+<script src="./script.JS"></script>
+</html>

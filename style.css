@@ -1,0 +1,228 @@
+/* import font family pour la police */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #6A9A6C;
+
+}
+
+/* stylisation header */
+header {
+    background-color: #81B38A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header img{
+    width: 100px;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+header li{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+section{
+    padding: 20px 10px 10px 10px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#headText{
+    margin-left: -20px;
+}
+#headText h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    background: linear-gradient(90deg, rgba(255,98,0,1) 21%, rgba(246,12,0,1) 39%, rgba(0,224,255,1) 39%, rgba(0,224,255,1) 57%, rgba(30,238,68,1) 67%, rgba(30,238,68,1) 75%, rgba(0,0,0,1) 75%);    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+/* styliser la barre de navigation  */
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #214822;
+    transition: all .2s ease-in-out;
+}
+nav a:hover {
+    color: #214822;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+/* section intro_box */
+
+#intro_txt{
+    padding: 30px 0;
+    font-size: 20px;
+}
+figure{
+    text-align: center;
+}
+#intro_img figure img{
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+h1{
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    text-align: right;
+    background-color: #81B38A;
+    padding: 20px;
+
+}
+
+
+/* section caracteristiques */
+#grid_caract{
+    margin-top: 30px;
+}
+
+/* section clients  */
+/* grid_client pour diviser le  contenu */
+.grid, #grid_caract{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#clients p{
+    margin: 25px 0px;
+    text-align: center;
+}
+.box,.carac_box {
+    width: 300px;
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+    background-color: #AACC92;
+}
+
+.carac_box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    height: 120px;
+}
+.carac_box h3{
+    padding-bottom: 7px;
+}
+.box{
+    padding: 15px;
+    height: 405px;
+    width: 805px;
+}
+.box_txt{
+    text-align: center;
+    /* padding: 15px 0px; */
+}
+
+.box_img img{
+    height: 400px;
+    width: 800px;
+    object-fit: cover;
+
+}
+/* box de la section map */
+#MAP .carac_box{
+    padding: 10px;
+    width: 230px;
+    height: 15px;
+    border-radius: 10px;
+}
+#MAP .box{
+    height: 606px;
+    width: 842px;
+}
+#MAP .box_img{
+    height: 601px;
+    width: 837px;
+}
+/* mis en page de la section imc */
+#imc{
+    text-align: center;
+}
+/* styliser la table */
+table{
+    margin: 30px auto;
+    width: 80%;
+    border-collapse: separate;
+    background: #AACC92;
+}
+
+th{
+    font-size: 16px;
+    text-align: left;
+    padding: 20px;
+    background-color: #6A9A6C;
+}
+tr td{
+    padding: 20px;
+}
+
+tr:last-child td{
+    border-bottom: none;
+}
+table tr:nth-child(odd) {
+    background-color: #81B38A;
+}
+tr:hover{
+    background-color: #81b38a91;
+    cursor: pointer;
+}
+
+
+/* footer */
+footer{
+    background-color: #81B38A;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+}
+footer li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+footer p{
+    padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+header{
+    flex-direction: column;
+}
+.box {
+    width: 100%;
+}
+}
